@@ -1,0 +1,1630 @@
+<HTML>
+
+<!-- Mirrored from dept.stat.lsa.umich.edu/~jizhu/sldm2012/abs_and_slides.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Jun 2015 17:43:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<HEAD>
+<TITLE>Conference on Statistical Learning and Data Science, Ann Arbor MI, 2012</TITLE>
+</HEAD>
+<body style="font-family:Times;background-color:#E8E8E8">
+<center>
+<table cellpadding="2" width="800px">
+<tr>
+ <td width="100%">
+  <table cellpadding="10" width="100%" bgcolor="white">
+  <tr>
+   <td valign="center">
+   <a href="http://www.umich.edu/" title="University of Michigan">
+   <img src="StackedBlockMwrapped.png" 
+   alt="University of Michigan logo" width="74" height="70" border="0">
+   </a>
+   </td>
+   <td valign="center">
+   <font size = 5> Conference on Statistical Learning and Data Science </font>
+   <br/>
+   <font size = 4 color = "gray"> 
+   Rackham Graduate School, University of Michigan, Ann Arbor, MI </br>
+   June 5 - 7, 2012
+   </font>
+   </td>
+  </tr>
+ </table>
+
+  <table cellspacing="25" cellspadding="20" width="100%" bgcolor="white"
+  style="font-family:verdana;font-size:15"> 
+  <tr>
+   <td valign="top" width="100%">
+   <hr>
+   <h3>June 5 (Tuesday)</h3>
+ 
+     <table cellspacing="5" style="font-size:14">
+     <tr>
+     <td>9:00-10:00am</td>
+     <td><b>Plenary Talk</b> (chaired by Harrison Zhou)</td>
+     </tr>
+     <tr>
+     <td valign="top">Amphitheatre</td>
+     <td valign="top">  <b><a name="pbartlett">Peter Bartlett</a></b>
+     (University of California, Berkeley)<br> 
+       <b><em><a href="slides/pbartlett.pdf">Large scale model selection
+       and computational oracle inequalities</a></em></b> 
+     <p> In many large-scale, high-dimensional prediction problems,
+     performance is limited by computational resources rather than sample
+     size. In this setting, we consider the problem of model selection
+     under computational constraints: given a particular computational
+     budget, is it better to gather more data and estimate a simpler model,
+     or gather less data and estimate a more complex model?  The talk will
+     first review classical results for the performance of model selection
+     methods based on complexity penalization.  These methods aim to choose
+     a model to optimally trade off estimation and approximation errors by
+     minimizing the sum of an empirical risk term and a complexity
+     penalty. We evaluate these methods via oracle inequalities, which show
+     that the predictive accuracy is almost as good as the best bound that
+     would have been achieved by any model in the hierarchy.  We then focus
+     on model selection with computational constraints, motivated by large
+     scale problems. We introduce general model selection methods. In
+     contrast to classical oracle inequalities, which show a near-optimal
+     trade-off between approximation error and estimation error for a given
+     sample size, we give computational oracle inequalities, which show
+     that our methods give a near-optimal trade-off for a given amount of
+     computation, that is, devoting all of our computational budget to the
+     best model would not have led to a significant performance
+     improvement.</p> 
+     </td>
+     </tr>
+
+     <tr>
+     <td> 10:30am-12:00pm</td>
+     <td> <b>Parallel Sessions</b></td> 
+     </tr>
+
+     <tr>
+     <td valign="top">East Room</td>
+     <td valign="top"><b><u><a name="thesterberg">Sensor networks, boosting
+     and CER</a></u></b> (organized by Tim Hesterberg and chaired by George
+     Michailidis)<br><br> 
+     
+     <b>Xiaoming Huo</b> (Georgia Institute of Technology)<br>
+     <b><em><a href="slides/xhuo.html">Trajectory identification in binary
+     proximity sensor networks</a></em></b> 
+     <p> In office buildings, hospitals, and clinics, anonymous binary
+     motion detectors can be installed. A key issue in mining this huge
+     amount of sensor data is to build predictive models, so that
+     particular applications can be facilitated. Trajectory identification
+     (TI) is to recover object tracks, out of anonymous binary sensor data;
+     it is a core step in mining this type of data. We present a general
+     approach that is based on optimization, specifically on the mixed
+     integer programming. We consider how to incorporate false information
+     and missing data, using maximum likelihood estimation. It turns out
+     the proposed method is extremely efficient in numerical
+     implementation. We found that the efficiency is due to the special
+     structure of this type of problems, which makes the current
+     state-of-the-art optimizer run extremely efficient. Some sufficient
+     conditions are derived to guarantee the numerical
+     efficiency. Robustness and reliability of the solutions will be
+     analyzed too. It has applications in building smart environments. </p> 
+     
+     <b>David Mease</b> (Google) <br>
+     <b><em><a href="slides/dmease.pdf">Evidence contrary to the
+     statistical view of boosting</a></em></b> 
+     <p> The statistical perspective on boosting algorithms focuses on
+     optimization, drawing parallels with maximum likelihood estimation for
+     logistic regression. In this talk we present empirical evidence that
+     raises questions about this view. Although the statistical perspective
+     provides a theoretical framework within which it is possible to derive
+     theorems and create new algorithms for general contexts, we show that
+     there remain many unanswered important questions.  Furthermore, we
+     provide examples that reveal crucial flaws in the many practical
+     suggestions and new algorithms that are derived from the statistical
+     view. We examine experiments using simple simulation models to
+     illustrate some of these flaws and their practical consequences.  This
+     is joint work with Abraham Wyner at the University of
+     Pennsylvania. </p> 
+     
+     <b>Robert Obenchain</b> (Risk Benefit Statistics) <br>
+     <b><em><a href="slides/robenchain.pdf">Help wanted: systematic
+     sensitivity analyses in CER</a></em></b> 
+     <p> Global, parametric models typically make strong assumptions that
+     can be wrong or misleading. Due to numerous sources of bias in
+     observational data, such models tend to grossly underestimate the true
+     uncertainty in Comparative Effectiveness Research (CER) using massive
+     datasets of medical records or administrative claims. Local Control
+     (LC) is a form of nonparametric preprocessing that makes robust
+     head-to-head treatment comparisons.  By dividing patients into many
+     subgroups (blocks) that are relatively well-matched on pre-treatment
+     X-covariates, LC produces a full distribution of local effect-size
+     estimates.  Systematic Sensitivity Analyses (SSA) of these
+     distributions can provide an objective basis for individualized
+     medicine by quantifying heterogeneous patient response to
+     treatment. Because the LC approach is nonparametric (i.e. makes many
+     fewer and weaker assumptions than parametric models), I will argue
+     that computational requirements for SSA of LC distributions are
+     sufficiently simplified to make them practically feasible.
+     Alternative "choices" made in LC are limited to: which patient
+     X-covariates are used, how many patient subgroups are formed, and
+     which method of patient matching / clustering is used. Members of the
+     SLDM section of ASA may well be uniquely qualified to pioneer use of
+     SSA in LC and, thereby, make future CER findings much more objective
+     and credible. </p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">West Room</td>
+     <td valign="top"><b><u><a name="mlam">Subgroup
+     identification</a></u></b> (organized and chaired by Ming-Long
+     Lam)<br><br> 
+
+     <b>Chakib Battioui</b> (Eli Lilly)<br>
+     <b><em> <a href="slides/cbattioui.pdf">A bootstrap-based ensemble
+     tree method to identify patient subgroups with enhanced treatment
+     effects</a></em> </b> 
+     <p> A rigorous method to identify patient subgroups with enhanced
+     treatment effects in clinical trials can be valuable for efforts to
+     develop tailored therapeutics.  However, such a method must address
+     the challenge of multiplicity, given the large number of potential
+     subgroups formed by even a modest number of predictors, and be able to
+     distinguish real difference from noise.  In this presentation, I will
+     describe a bootstrap-based ensemble tree method we have implemented to
+     identify subgroups of patients for whom the treatment effect is
+     significantly larger than for the overall patient population.  The
+     method starts by applying the tree procedure in SAS Enterprise Miner
+     to multiple bootstrap samples to extract an ensemble of preliminary
+     subgroups with better response.  This ensemble is then reduced by
+     aggregating over similarly defined subgroups.  Out-of-Bag data is used
+     to control type I errors and, for each candidate subgroup, correct the
+     bias in the estimated treatment effect. </p> 
+
+     <b>Richard Zink</b> (JMP)<br>
+     <b><em><a href="slides/rzink.pdf">Considerations for subgroup
+     identification of patients with enhanced treatment response in
+     clinical trials</a></em></b> 
+     <p> In contrast to the "one-size-fits-all" approach of traditional
+     drug development, the need to locate subjects with an enhanced
+     treatment effect is a critical component for tailored therapeutics or
+     personalized medicine.  Typically, the goal is to identify patients
+     receiving additional benefit from the treatment in terms of an
+     efficacy response.  Alternatively, finding subgroups based on
+     important safety endpoints could be considered to determine those
+     individuals experiencing a reduced risk of key adverse events, or to
+     identify subjects for whom the new therapy may be inappropriate. The
+     analysis of subgroups in clinical trials is a controversial topic. 
+     There is often insufficient power to observe statistically significant
+     treatment effects among numerous subgroups.  Furthermore, a common
+     practice is to identify many potential subgroups post hoc and to
+     perform testing without the appropriate adjustment for multiple
+     comparisons.  This often leads to numerous false-positive findings.
+     One common recommendation is to pre-specify a small number of
+     clinically-meaningful subgroups for analysis and to interpret the
+     findings conservatively.  In many instances, however, the number of
+     covariates may be so numerous or the biological phenomenon may be
+     poorly understood so that pre-specifying subgroups is difficult at
+     best. To address these concerns, we describe a "prune-as-you-go"
+     method for subgroup identification.  We address the following topics:
+     i) computational complexity,  ii) accounting for multiplicity, iii)
+     minimizing confounding, iv) interpreting  and communicating findings,
+     and v) potential regulatory concerns.  Finally, we describe the impact
+     CDISC standards will likely have on subgroup-finding
+     methodologies. </p> 
+
+     <b>Jared Foster</b> (University of Michigan)<br>
+     <b><em><a href="slides/jfoster.pdf">Subgroup identification using
+     random forests and regression trees</a></em></b> 
+     <p> We consider the problem of identifying a subgroup of patients who
+     may have an enhanced treatment effect in a randomized clinical
+     trial. In such cases, there are often a moderate to large number of
+     covariates, and it is desirable that any identified subgroup be
+     defined by a limited number of covariates.  For this problem, the
+     development of a standard, pre-determined strategy may help to avoid
+     the well-known dangers of subgroup analysis. We present one such
+     strategy, which we refer to as "Virtual Twins." This method involves
+     predicting response probabilities for treatment and control "twins"
+     for each subject using random forests. In order to identify a subset
+     of enhanced treatment effect which is defined by a limited number of
+     covariates, the difference in these probabilities is then used as the
+     outcome in a classification or regression tree.  We define a measure
+     Q(A) to be the difference between the treatment effect in estimated
+     subgroup A and the marginal treatment effect.  We present several
+     methods developed to obtain an estimate of Q(A), including estimation
+     of Q(A) using estimated probabilities in the original data and using
+     estimated probabilities in newly simulated data.  With this method,
+     there is the potential for over-fitting, so we discuss a number of
+     ways to combat this, including a bootstrap-based bias correction for
+     estimates of Q(A). </p> 
+     </td>
+     </tr>         
+          
+     <tr>
+     <td valign="top">Amphitheatre</td>
+     <td valign="top"><b><u><a name="szhou">Sparsity in high dimensional
+     problems</a></u></b> (organized and chaired by Shuheng Zhou)<br><br> 
+     
+     <b>Roman Vershynin</b> (University of Michigan)<br>
+     <b><em><a href="slides/rvershynin.pdf">New ways of dimension
+     reduction? How to cut data sets into small pieces</a></em></b> 
+     <p> The classical and simplest method of dimension reduction for a
+     data set K in R^N is to project K onto a random low-dimensional
+     subspace. Johnson-Lindenstrauss lemma gives theoretical guarantees for
+     this method. I will describe a new geometric way of dimension
+     reduction, which is to *cut*, rather than project, the data set K by
+     random independent hyperplanes. Compared to Johnson-Lindenstrauss
+     Lemma, one obtains an embedding of K into a *discrete* metric space,
+     namely the Hamming cube. To compute the embedding, one simply records
+     the orientation of a point with respect to all hyperplanes. Moreover,
+     one can algorithmically and accurately recover a point from its image
+     in the Hamming cube by solving a convex program. I will discuss
+     possible connections and applications of this "cutting" method for
+     compressed sensing and for sparse binomial regression. This is a joint
+     work with Yaniv Plan (UM, Mathematics).</p> 
+     
+     <b>Cun-Hui Zhang</b> (Rutgers University)<br>
+     <b><em><a href="slides/czhang.pdf">A general theory of concave
+     regularization for high dimensional sparse estimation
+     problems</a></em></b> 
+     <p> Concave regularization methods provide natural procedures for
+     sparse recovery. However, they are difficult to analyze in the high
+     dimensional setting. Only recently a few sparse recovery results have
+     been established for some specific local solutions obtained via
+     specialized numerical procedures. Still, the fundamental relationship
+     between these solutions such as whether they are identical or their
+     relationship to the global minimizer of the underlying nonconvex
+     formulation is unknown. The current paper fills this conceptual gap by
+     presenting a general theoretical framework showing that under
+     appropriate conditions, the global solution of nonconvex
+     regularization leads to desirable recovery performance; moreover,
+     under suitable conditions, the global solution corresponds to the
+     unique sparse local solution, which can be obtained via different
+     numerical procedures. Under this unified framework, we present an
+     overview of existing results and discuss their connections. The
+     unified view of this  work leads to a more satisfactory treatment of
+     concave high dimensional sparse estimation procedures, and serves as
+     guideline for developing further numerical procedures for concave
+     regularization. This is joint work with Tong Zhang. </p> 
+     
+     <b>Harrison Zhou</b> (Yale University)<br>
+     <b><em><a href="slides/harryzhou.pdf">Optimalities in estimation of
+     latent variable graphical models</a></em></b> 
+     <p> In this talk we will consider estimation of latent variable
+     graphical models. The precision matrix can be decomposed as the sum of
+     a sparse matrix and a low rank matrix. Rate-optimal estimation will be
+     studied to recover both sparse and low rank components. </p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">1:30-3:00pm </td>
+     <td> <b>Parallel Sessions</b></td> 
+     </tr>
+
+     <tr>
+     <td valign="top">East Room</td>
+     <td valign="top"><b><u><a name="dbanks">Complex data in
+     medicine</a></u></b> (organized by David Banks and chaired by Kerby
+     Shedden)<br><br> 
+     
+     <b> David Banks </b> (Duke University)<br>
+     <b><em><a href="slides/dbanks.pdf">Statistical issues in
+     metabolomics metrology</a></em></b> 
+     <p> Metabolomics measurement is a complex process, with several
+     sources of uncertainty and systematic error.  This talk describes an
+     integrated Bayesian approach that includes warping, modeling of
+     library functions, and incorporation of calibration standards.  The
+     result is a significant improvement in the quality of overall
+     estimates of metabolite abundance, and generalizable template for
+     analyses on multiple platforms.  The performance is assessed using
+     data from the Beecher Laboratory at the University of Michigan. </p> 
+
+     <b>Hongyuan Cao</b> (University of Chicago)<br>
+     <b><em>Multiple testing under
+     dependence</em></b> 
+     <p> High-throughput screening has become an important mainstay for
+     contemporary biomedical research. A standard approach is to first rank
+     p-values and then adjust for multiplicity. In certain applications,
+     for example, imaging analysis, the signals are sparse but
+     clustered. By taking into account of the neighbouring information of
+     spatially structured data, we propose a new multiple comparison
+     procedure to accommodate the spatial information of neighbouring
+     p-values. Theoretical properties of the new testing procedure are
+     investigated. We demonstrate that our approach has improved detection
+     ability as opposed to methods that ignore the sparse spatial structure
+     through numerical studies. The computational simplicity and detection
+     effectiveness of our procedure are illustrated through a breast cancer
+     imaging dataset. </p> 
+
+     <b> Eric Laber </b> (North Carolina State University)<br>
+     <b><em><a href="slides/elaber.pdf">Statistical inference for dynamic
+     treatment regimes</a></em></b> 
+     <p> Dynamic treatment regimes, also known as treatment policies, are
+     increasingly being used to operationalize sequential clinical decision
+     making associated with patient care. Common approaches to constructing
+     a dynamic treatment regime from data, such as Q-learning, employ
+     non-smooth functionals of the data. Therefore, simple inferential
+     tasks such as constructing a confidence interval for the parameters in
+     the Q-function are complicated by nonregular asymptotics under certain
+     commonly-encountered generative models. Methods that ignore this
+     nonregularity can suffer from poor performance in small samples. We
+     construct confidence intervals for the parameters in the Q-function by
+     first constructing smooth, data-dependent, upper and lower bounds on
+     these parameters and then applying the bootstrap. The confidence
+     interval is adaptive in that although it is conservative for
+     nonregular generative models, it achieves asymptotically exact
+     coverage elsewhere. The small sample performance of the method is
+     evaluated on a series of examples and compares favorably to previously
+     published competitors. Finally, we illustrate the method using data
+     from the Adaptive Interventions for Children with ADHD study (Pelham
+     and Fabiano 2008). </p>
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">West Room</td>
+     <td valign="top"><b><u><a name="hlee">Methods for modeling complex
+     dependence structure in high dimension setting</a></u></b> (organized
+     by Hongzhe Lee and chaired by Xiaoming Huo)<br><br> 
+     
+     <b> Genevera Allen </b> (Rice University)<br>
+     <b><em>Sparse higher-order principal
+     components analysis</em></b> 
+     <p> High-dimensional tensors or multi-way data are becoming prevalent
+     in areas such as biomedical imaging, chemometrics, networking and
+     bibliometrics. Traditional approaches to finding lower dimensional
+     representations of tensor data include fattening the data and applying
+     matrix factorizations such as principal components analysis (PCA) or
+     employing tensor decompositions such as the CANDECOMP/PARAFAC (CP) and
+     Tucker decompositions. The former can lose important structure in the 
+     data, while the latter Higher-Order PCA (HOPCA) methods can be
+     problematic in high-dimensions with many irrelevant features. We introduce
+     frameworks for sparse tensor factorizations or Sparse HOPCA based on
+     heuristic algorithmic approaches and by solving penalized optimization
+     problems related to the CP decomposition. Extensions of these
+     approaches lead to methods for general regularized tensor
+     factorizations, multi-way Functional HOPCA and generalizations of
+     HOPCA for structured data. We illustrate the utility of our methods
+     for dimension reduction, feature selection, and signal recovery on
+     simulated data and multi-dimensional microarrays and functional
+     MRIs. </p> 
+     
+     <b>Jichun Xie</b> (Temple University)<br>
+     <b><em><a href="slides/jxie.pdf">Joint estimation of multiple
+     precision matrices</a></em></b> 
+     <p> Precision matrices reveal conditional dependency structures
+     between multivariate normal random variables. Some heterogeneous data
+     share similar dependency structures among different groups. One of the
+     examples is the multiple-tissue gene expression data. Evidence has shown
+     that the gene regulatory networks share similarities across different
+     tissues and yet have tissue-specific interaction mechanism. To improve
+     the estimation efficiency, we develop a joint estimation method to
+     infer precision matrices. Theoretical and Numerical studies show that
+     our method has improved support recovery results compared with
+     separate estimation methods as well as other competing joint
+     estimation methods. We further apply our method to the mouse gene
+     expression data and obtain the gene regulatory networks for multiple
+     mouse tissues. </p> 
+     
+     <b> Lifeng Wang </b> (Michigan State University)<br>
+     <b><em><a href="slides/lwang.html">Efficient regularization path
+     algorithms for high dimensional additive models</a></em></b> 
+     <p> Least Angle Regression (LARS) proves to be an efficient algorithm
+     that constructs piecewise linear solution path for high-dimensional
+     linear regression, particularly for the problem with p>>n. However,
+     piecewise linear path algorithms have yet to be developed for
+     nonparametric additive models. Motivated by the geometric
+     interpretation of LARS, we propose a functional LARS algorithm to
+     perform nonparametric regression and feature selection simultaneously
+     for high-dimensional additive models. The proposed algorithm
+     efficiently constructs the whole regularization path, which allows for
+     adaptive tuning and efficient model selection. We investigate its
+     asymptotic property and its connection to the Boosting and Lasso
+     algorithms for additive models, and illustrate its finite-sample
+     performance via simulations and applications. </p>
+     </td>
+     </tr>         
+
+
+     <tr>
+     <td valign="top">3:30-5:00pm</td>
+     <td> <b>Parallel Sessions</b></td> 
+     </tr>
+
+     <tr>
+     <td valign="top">East Room</td>
+     <td valign="top"><b><u><a name="tmccormick">Statistical network
+     analysis</a></u></b> (organized by Tyler McCormick and chaired by
+     Elizaveta Levina)<br><br> 
+     
+     <b> Tyler McCormick </b> (University of Washington)<br>
+     <b><em><a href="slides/tmccormick.html">Latent space models for
+     networks using aggregated relational data</a></em></b> 
+     <p> The latent space model for networks (see Hoff, Raftery and
+     Handcock (2002), for example) assumes that the actors in a network
+     form ties independently given their (latent) position in some
+     unobservable 'social space.'  A multidimensional geometric space then
+     parsimoniously represents the complicated dependence structure in the
+     network.  In many cases---particularly in the social
+     sciences---collecting complete network data, required for the latent
+     space model, is logistically and financially challenging.  In
+     contrast, Aggregated Relational Data (ARD) measure network structure
+     indirectly by asking respondents how many connections they have with
+     members of a certain subpopulation (e.g. How many individuals with
+     HIV/AIDS do you know?).  These data require no special sampling
+     procedure and are easily incorporated into existing surveys.  This
+     research develops a latent space model for ARD.  The key distinction
+     from the complete network case is that instead of conditioning on the
+     (latent) distance between two members of the network, the latent space
+     model for ARD conditions on the expected distance between a survey
+     respondent and the center of a subpopulation in the latent space.  A
+     spherical latent space facilitates tractable computation of this
+     expectation. This model estimates relative homogeneity between groups
+     in the population and variation in the propensity for interaction
+     between respondents and group members.  The model also estimates
+     features of groups which are difficult to reach using standard surveys
+     (the homeless, for example). </p> 
+
+     <b>Simon Lunagomez</b> (Harvard University)<br>
+     <b><em><a href="slides/slunagomez.html">Bayesian inference from
+     non-ignorable network sampling designs</a></em></b> 
+     <p> Consider a population where subjects are susceptible to a disease
+     (e.g. AIDS). The objective is to perform inferences on a population
+     quantity (like the incidence of HIV on a high-risk subpopulation,
+     e.g. intra-venous drug abusers) via sampling mechanisms based on a
+     social network (link-tracing designs, RDS). We phrase this problem in
+     terms of the framework proposed by Rubin (1976). A new notion of
+     ignorability (graph-ignorability) is proposed for this context and it
+     is proved that RDS is not graph-ignorable. We develop a general
+     framework for making Bayesian inference on the population quantity
+     that: models the uncertainty in the underlying social network using a
+     random graph model, incorporates dependence among the individual
+     responses according to the social network via a Markov Random Field,
+     models the uncertainty regarding the sampling on the social network,
+     and deals with the non-ignorability of the sampling design. The
+     proposed framework is general in the sense that it allows a wide range
+     of different specifications for the components of the model we just
+     mentioned. Samples from the posterior distribution are obtained via
+     Bayesian model averaging. Our model is compared with state of the art
+     methods in simulation studies to show its superiority.  This is joint
+     work with Edoardo Airoldi. </p> 
+
+     <b>Andrew Thomas</b> (Carnegie Mellon University)<br>
+     <b><em><a href="slides/athomas.pdf">Discriminating among distance
+     functions for network-correlated outcomes</a></em></b> 
+     <p> A key promise of social networks is the ability to detect and
+     model the correlation of personal attributes along the structure of
+     the network, in either static or dynamic settings.  The basis for most
+     of these models, the Markov Random Field on a lattice, has several
+     assumptions that may not be reflected in real network data, namely the
+     assumptions that the process is stationary on the lattice, and that
+     the ties in the model are correctly specified. Additionally, it is
+     less than clear how correlation over longer distances on networks can
+     be adequately specified under the lattice mechanism, given the
+     assumption of a stationary process at work. Based on concepts from
+     generalized additive models and spatial/geostatistical methods, I
+     introduce a class of models that is more robust to the failure of
+     these assumptions, more flexible to different definitions of network
+     distance, and more generally applicable to large-scale studies of
+     network phenomena. In this talk I will address the challenge of
+     selecting an appropriate subset of distance measures from the possible
+     range of choices, including the interaction of multiple classes of
+     network ties. </p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">West Room</td>
+     <td valign="top"><b><u><a name="arothman">Topics in multivariate
+     statistics</a></u></b> (organized and chaired by Adam Rothman)<br><br> 
+     
+     <b>Gareth James</b> (University of Southern California)<br>
+     <b><em><a href="slides/gjames.pdf">Functional additive
+     regression</a></em></b> 
+     <p> We suggest a new method, called "Functional Additive Regression",
+     or FAR, for efficiently performing high dimensional functional 
+     regression. FAR extends the usual linear regression model involving a
+     functional predictor, X(t), and a scalar response, Y , in two key
+     respects. First, FAR uses a penalized least squares optimization
+     approach to efficiently deal with high dimensional problems involving
+     a large number of different functional predictors. Second, FAR extends
+     beyond the standard linear regression setting to fit general
+     non-linear additive models. FAR can be implemented with a wide range
+     of penalty functions using a highly efficient coordinate descent
+     algorithm. FAR can also be extended to include both functional
+     responses and predictors. We demonstrate our method by predicting the
+     first 10 weeks of Hollywood movie box office revenues using an online
+     virtual movie stock market. </p>
+     
+     <b>Wenxuan Zhong</b> (University of Illinois at Urbana-Champaign)<br>
+     <b><em><a href="slides/wzhong.pdf">Variable selection procedures for
+     the index model</a></em></b> 
+     <p> In this talk, I will present three variable selection methods
+     developed under the sufficient dimension reduction framework. Unlike
+     the conventional stepwise method, the proposed methods do not impose a
+     special form of relationship between the response variable and the
+     predictor variables. They select variables that maximize the
+     correlation between the transformed response and linear combinations
+     of the predictors. Various asymptotic properties of the methods will
+     be discussed, and in particular, the variable selection performance
+     under the diverging number of predictors and sample size will be
+     discussed. </p>
+     
+     <b>Yunzhang Zhu</b> (University of Minnesota)<br>
+     <b><em><a href="slides/yzhu.pdf">Estimation over multiple undirected
+     graphs</a></em></b> 
+     <p> Graphical models are useful to analyze and visualize conditional
+     independence relationships between interacting units, in addition to
+     their structural implications. For instance, in dynamic network
+     analysis, a structural change is often a result of certain events or
+     experimental conditions. In this talk, we will discuss methods for
+     estimating multiple precision matrices over Gaussian graphical models,
+     describing dependencies among interacting units. Of particular
+     interest is the clustering structure over these matrices as well as
+     the sparseness structure over and within matrices, which is
+     characterized by homogeneous subgroups of elements and zero-elements
+     of the matrices. Numerical as well as theoretical results will be
+     presented to support use of the methods.  This work is joint with
+     Xiaotong Shen and Wei Pan. </p> 
+     </td>
+     </tr>         
+
+     </table> 
+
+   <h3>June 6 (Wednesday)</h3>
+     <table cellspacing="5" style="font-size:14">
+
+     <tr>
+     <td valign="top">8:30-10:00am</td>
+     <td> <b>Parallel Sessions</b></td> 
+     </tr>
+     
+     <tr>
+     <td valign="top">East Room</td>
+     <td valign="top"><b><u><a name="elaber">Complex data structures and
+     learning</a></u></b> (organized and chaired by Eric Laber)<br><br> 
+
+     <b>Natesh Pillai</b> (Harvard University) <br>
+     <b><em><a href="slides/npillai.html">On a class of shrinkage priors
+     for covariance matrix estimation</a></em></b> 
+     <p> We propose a flexible class of models based on scale mixture of
+     uniform distributions to construct shrinkage priors for covariance
+     matrix estimation. This new class of priors enjoys a number of
+     advantages over the traditional scale mixture of normal priors,
+     including its simplicity and flexibility in characterizing the prior
+     density. We also exhibit a simple, easy to implement Gibbs sampler for
+     posterior simulation which leads to efficient estimation in high
+     dimensional problems. We first discuss the theory and computational
+     details of this new approach and then extend the basic model to a new
+     class of multivariate conditional autoregressive models for analyzing
+     multivariate areal data. The proposed spatial model flexibly
+     characterizes both the spatial and the outcome correlation structures
+     at an appealing computational cost. Examples consisting of both
+     synthetic and real-world data show the utility of this new framework
+     in terms of robust estimation as well as improved predictive
+     performance. </p>
+
+     <b>Kerby Shedden</b> (University of Michigan) <br>
+     <b><em> <a href="slides/kshedden.pdf">Learning curves under
+     increasing model complexity</a></em></b> 
+     <p> The accuracy of a trained classifier is expected to increase as
+     the training set sample size grows.  The classification accuracy rate 
+     expressed as a function of the training set sample size has been
+     termed the "learning curve."  The learning curve has previously been
+     seen to depend in a natural way on the number of predictor variables,
+     and on the relationship between the training and testing covariate
+     distributions. These results were obtained in a framework where a
+     fixed model structure is used as the sample size grows.  I will
+     present our recent efforts to characterize learning curve behavior in
+     a setting where increasingly complex models are fit as the sample size
+     grows.  We find that a wider range of learning curve patterns arises,
+     and the shape of the learning curve becomes more difficult to predict
+     than in the case of a static model structure. </p>
+     
+     <b>Hua Zhou</b> (North Carolina State University) <br>
+     <b><em><a href="slides/huazhou.pdf">Tensor regression with
+     applications in neuroimaging data analysis</a></em></b> 
+     <p> Classical regression methods treat covariates as a vector and
+     estimate a corresponding vector of regression coefficients. Modern
+     applications in medical imaging generate covariates of more complex
+     form such as multidimensional arrays (tensors). Traditional
+     statistical and computational methods are proving insufficient for
+     analysis of these high-throughput data due to their ultrahigh
+     dimensionality as well as complex structure. We propose a new family
+     of tensor regression models that efficiently exploit the special
+     structure of tensor covariates. Under this framework, ultrahigh
+     dimensionality is reduced to a manageable level, resulting in
+     efficient estimation and prediction. A fast and highly scalable
+     estimation algorithm is proposed for maximum likelihood estimation and
+     the asymptotics are studied. Effectiveness of the new methods is
+     demonstrated on both synthetic and real MRI imaging data. This is
+     based on joint work with Lexin Li and Hongtu Zhu. </p>
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">West Room</td>
+     <td valign="top"><b><u><a name="ylee">Statistical ranking</a></u></b>
+     (organized and chaired by Yoonkyung Lee)<br><br> 
+     
+     <b>Shivani Agarwal</b> (Indian Institute of Science) <br>
+     <b><em><a href="slides/sagarwal.html">On the statistical consistency
+     of ranking algorithms</a></em></b> 
+     <p> Ranking problems arise in an increasing number of applications,
+     including for example information retrieval, recommendation systems,
+     computational biology, drug discovery, and a variety of industrial
+     prioritization tasks. In recent years, there has been much interest in
+     developing machine learning algorithms for ranking problems, and in
+     understanding the statistical properties of such algorithms. This talk
+     will survey some of these results, focusing on the statistical
+     consistency properties of ranking algorithms.</p> 
+     
+     <b>Lek-Heng Lim</b> (University of Chicago) <br>
+     <b><em><a href="slides/llim.pdf">Online ranking on random
+     graphs</a></em></b> 
+     <p> Suppose a large number of voters have each rated or compared a
+     small subset of a large number of alternatives, how could we rank the
+     alternatives based on these data? The rank aggregation problem is
+     fraught with famous difficulties --- Arrow's impossibility, Saari's
+     chaos, NP-hardness of Kemeny optima. To complicate matters further,
+     let's say the ratings do not come all at once but trickles in on a
+     daily basis and we would like to regularly update our ranking. Let's
+     say we also want a measure of reliability or quality of our
+     ranking. We will discuss a method based on Hodge decomposition and
+     online learning that meets all these requirements. This is joint work
+     with Yuan Yao. </p> 
+     
+     <b>Cynthia Rudin</b>  (MIT) <br>
+     <b><em><a href="slides/crudin.pdf">How to reverse-engineer product
+     quality rankings</a></em></b> 
+     <p> A good or bad product quality rating can make or break an
+     organization. However, the notion of "quality" is often defined by an
+     independent rating company that does not make the formula for ranking
+     products public. We provide a supervised ranking approach for
+     "reverse-engineering" a rating company's proprietary model as closely
+     as possible. More generally, we present novel mixed integer
+     programming (MIP) formulations for optimizing a large class of rank
+     statistics, including the Area Under the Curve (AUC), the partial or
+     local AUC, the Discounted Cumulative Gain (DCG), the P-Norm Push, and
+     quality metrics relevant to reverse-engineering product rankings. We
+     demonstrate the merit of our approach on a decade's worth of quality
+     rating data from a major quality ratings company. This is joint work
+     with Allison Chang from MIT, and Mike Cavaretta, Bob Thomas, and
+     Gloria Chou from Ford Motors.
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">Amphitheatre</td>
+     <td valign="top"><b><u><a name="xshen">Learning dependent
+     structures</a></u></b> (organized by Xiaotong Shen and chaired by
+     Genevera Allen)<br><br> 
+     
+     <b>Adam Rothman</b> (University of Minnesota) <br>
+     <b><em><a href="slides/arothman.pdf">Positive definite estimators of
+     large covariance matrices</a></em></b> 
+     <p> Using convex optimization, we construct a sparse estimator of the
+     covariance matrix that is positive definite and performs well in
+     high-dimensional settings. A lasso-type penalty is used to encourage
+     sparsity and a logarithmic barrier function is used to enforce
+     positive definiteness. Consistency and convergence rate bounds are
+     established as both the number of variables and sample size
+     diverge. An efficient computational algorithm is developed and the
+     merits of the approach are illustrated with simulations and a speech
+     signal classification example. </p> 
+     
+     <b>Peng Wang</b> (Bowling Green State University)<br>
+     <b><em><a href="slides/pwang.pdf">High-dimensional inference
+     function for random effects model with unspecified
+     distribution</a></em></b> 
+     <p> In longitudinal studies, mixed-effects models are important for
+     addressing subject-specific effects. However, most existing approaches
+     assume a normal distribution for the random effects,  and this could
+     affect the bias and efficiency of the fixed-effects estimator. Even in
+     cases where the estimation of the fixed effects is robust with a
+     misspecified distribution of the random effects, the estimation of the
+     random effects could be invalid.  We propose a new approach to
+     estimate fixed and random effects using conditional quadratic
+     inference functions. The new approach does not require the
+     specification of likelihood functions or a normality assumption for
+     random effects. It can also accommodate serial correlation between
+     observations within the same cluster, in addition to mixed-effects
+     modeling. Other advantages include not requiring the estimation of the
+     unknown variance components associated with the random effects, or the
+     nuisance parameters associated with the working correlations. We
+     establish asymptotic results  for the fixed-effect parameter
+     estimators which do not rely on the consistency of the random-effect
+     estimators. Real data examples and simulations are used to compare the
+     new approach with the penalized quasi-likelihood approach, and SAS
+     GLIMMIX and nonlinear mixed effects model (NLMIXED) procedures. </p> 
+     
+     <b>Lingsong Zhang</b> (Purdue University)<br>
+     <b><em>Robust regularized singular value
+     decomposition for two-way functional data</em></b> 
+     <p> We develop a robust regularized singular value decomposition
+     (RobRSVD) method for analyzing two-way functional data. The research
+     is primarily motivated by the application of modeling human mortality
+     as a smooth two-way function of age group and year. The RobRSVD is
+     formulated as a penalized minimization problem where a robust loss
+     function is used to measure the reconstruction error of a low-rank
+     matrix approximation of the data, and an appropriately defined two-way
+     roughness penalty function is used to ensure smoothness along two
+     functional domains. By viewing the minimization problem as conditional
+     regularized robust regressions, we develop a fast iterative reweighted
+     least squares algorithm to implement the method. Furthermore, our
+     formulation allows rigorous derivation of leave-one-row/column-out
+     cross-validation and generalized cross-validation criteria, which
+     enable computationally efficient data-driven penalty parameter
+     selection. The advantages of the developed method over non-robust ones
+     are shown via the mortality rate application and extensive simulation
+     studies. This is a joint work with Haipeng Shen and Jianhua Huang.</p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td>10:30-11:30am </td>
+     <td> <b>Plenary Talk</b> (chaired by David Banks) </td>
+     </tr>
+     <tr>
+     <td valign="top">Amphitheatre</td>
+     <td valign="top"> <b><a name="smurphy">Susan Murphy</a></b>
+     (University of Michigan) <br> 
+     <b><em><a href="slides/smurphy.pdf">Adaptive confidence intervals
+     for nonregular parameters</a></em></b> 
+     <p> A commonly occurring non-regular parameter arises when scientific
+     interest centers on a non-smooth function of regular parameters.
+     These non-regular parameters occur in the assessment of a classifier's
+     performance, in the estimation of multistage decision making policies
+     and in many economic models.  Indeed methods that use thresholding to
+     provide interpretable results yet improve prediction performance
+     produce non-regular parameters of this type.  This is because these
+     methods can be interpreted at estimating sparse versions of an
+     underlying high dimensional parameter.  If confidence intervals are
+     considered at all, most research assumes potentially implausible
+     "margin-like" conditions in order to justify the proposed confidence
+     interval method.   We describe a different approach based on
+     constructing smooth upper and lower bounds on the parameter and then
+     basing the confidence interval on the smooth upper and lower
+     bounds. In particular two settings will be discussed and contrasted,
+     that of a confidence interval for the misclassification rate and a
+     confidence intervals for parameters in multistage decision making
+     policies. </p> 
+     </td>
+     </tr>
+
+     <tr>
+     <td valign="top">1:00-2:30pm </td>
+     <td> <b>Parallel Sessions</b></td> 
+     </tr>
+
+     <tr>
+     <td valign="top">East Room</td>
+     <td valign="top"><b><u><a name="lnguyen">	Learning latent
+     structures</a></u></b> (organized and chaired by Long Nguyen)<br><br> 
+     
+     <b>Ryan Adams</b> (Harvard University)<br>
+     <b><em><a href="slides/radams.html">Tree-structured stick breaking
+     processes for hierarchical data</a></em></b> 
+     <p> The Dirichlet process and related distributions over
+     infinite-dimensional random measures have had a large impact on
+     Bayesian nonparametric modeling, but they can be limited by the lack
+     of structure they place over their random partitions.  In this work,
+     we use a recursive stick breaking process to construct a Bayesian
+     nonparametric prior for inferring hierarchies in data, yielding an
+     exchangeable urn scheme on trees of unbounded width and depth.  We use
+     a novel slice sampling approach based on an auxiliary variable model
+     to update the structure of the tree, as well as Gibbs moves that take
+     advantage of invariance under size-biased permutation.  We use this
+     MCMC sampling scheme to perform hierarchical clustering on a set of
+     50,000 color images, and also to discover structure from natural
+     language in a corpus of scientific documents. This is joint work with
+     Zoubin Ghahramani (Cambridge) and Michael Jordan (Berkeley). </p> 
+     
+     <b>Junming Yin</b> (Carnegie Mellon University)<br>
+     <b><em><a href="slides/exing.html">Group sparse additive
+     models</a></em></b> 
+     <p> We consider the problem of sparse variable selection in
+     nonparametric additive models, with the prior knowledge of the
+     structure among the covariates to encourage those variables within a
+     group to be selected jointly. Previous works either study the group
+     sparsity in the parametric setting (e.g., group lasso), or address the
+     variable selection problem in the nonparametric setting without
+     exploiting the structural information (e.g., sparse additive models
+     (SpAM)). In this paper, we present a new method, called group sparse
+     additive models (GroupSpAM), which can handle group sparsity in
+     nonparametric additive models. We generalize the l1/l2 norm to Hilbert
+     spaces as the sparsity-inducing penalty in GroupSpAM. Moreover, we
+     derive a novel thresholding condition for identifying the functional
+     sparsity at the group level, and propose an efficient block coordinate
+     descent algorithm for constructing the estimate. We demonstrate by
+     simulation that GroupSpAM substantially outperforms competing methods
+     in terms of support recovery and prediction accuracy in additive
+     models, and also conduct a comparative experiment on a real breast
+     cancer dataset. </p> 
+     
+     <b>Abel Rodriguez</b> (UC Santa Cruz)<br>
+     <b><em><a href="slides/arodriguez.html">Modeling collections of
+     networks using nonparametric mixtures</a></em></b> 
+     <p> Network data, where the observations corresponds to measurements
+     of the interactions among a collection of subjects, arises in
+     application areas as diverse as biology, sociology, epidemiology, and
+     finance. Array-valued extensions of non-parametric mixture models have
+     recently been used to generate flexible extensions of the traditional
+     class of blockmodels, which are often used for the purpose of
+     community identification. This talk will discuss extensions of these
+     infinite-dimensional blockmodels to problems where multiple networks
+     are observed. In particular, we discuss both models for time series of
+     networks, with a particular emphasis on modeling sequences of
+     financial trading networks.  This is a joint work with Naomi Boyd
+     (University of West Virginia) and Brenda Betancourt (University of
+     California, Santa Cruz). </p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">West Room</td>
+     <td valign="top"><b><u><a name="ywu">New techniques for correlated
+     high-dimensional data</a></u></b> (organized and chaired by Yichao
+     Wu)<br><br> 
+     
+     <b>Wonyul Lee and Yufeng Liu</b> (University of North Carolina at
+     Chapel Hill)<br> 
+     <b><em><a href="slides/yliu.html">Joint statistical modeling of
+     multiple high dimensional data</a></em></b> 
+     <p> With the abundance of high dimensional data, shrinkage
+     techniques are very popular for simultaneous variable selection
+     and estimation. In this talk, I will present some new shrinkage
+     techniques for joint analysis of multiple high dimensional data.
+     Applications on cancer gene expression data and micro-RNA data
+     will be presented. </p>
+
+     <b>George Michailidis</b> (University of Michigan)<br>
+     <b><em><a href="slides/gmichailidis.html">Inferring gene regulatory
+     networks by integrating perturbation screens and steady state gene
+     expression profiles</a></em></b> 
+     <p> Reconstructing a transcriptional regulatory network is an
+     important task in functional genomics. Data obtained from experiments
+     that perturb genes by knock-outs or RNA interference contain useful
+     information for addressing the reconstruction problem. However, such
+     data can be limited in size and/or expensive to acquire. On the other
+     hand, observational data of the organism in steady state are more
+     readily available, but their informational content inadequate for the
+     task at hand. We develop a computational approach to appropriately
+     utilize both data sources for estimating a regulatory network. The
+     proposed method offers significant advantages over existing
+     techniques. We develop a three-step algorithm to estimate the
+     underlying directed acyclic regulatory network that uses as input both
+     perturbation screens and steady state gene expression data. In the
+     first step, the algorithm determines causal orderings of the genes
+     that are consistent with the perturbation data. In the second step,
+     for each ordering, a regulatory network is estimated using a penalized
+     likelihood based method, while in the third step a consensus network
+     is constructed from the highest scored ones. The algorithm offers two
+     options for determining all possible causal orderings: an exhaustive
+     search that becomes prohibitive for larger scale problems and a fast
+     heuristic that couples a Monte Carlo technique with a fast search
+     algorithm. Further, it is established that the algorithm produces a
+     consistent estimate of the regulatory network. Numerical results show
+     that the algorithm performs well in uncovering the underlying network
+     and clearly outperforms competing approaches that rely only on a
+     single data source. </p> 
+     
+     <b>Ning Hao and Helen Zhang</b> (University of Arizona)<br>
+     <b><em><a href="slides/nhao.pdf">Selection of interaction effects
+     for ultra high-dimensional data</a></em></b> 
+     <p> For the ultra-high dimensional data, the identification of
+     important interaction effects is an extremely challenging task, in
+     terms of computation, practical implementation, and theoretical
+     investigation. We propose new methods and computational algorithms to
+     tackle these issues. The new methods are featured with efficient
+     computation, desired theoretical properties, and promising numerical
+     results. Various examples are presented to illustrate the new
+     proposals. </p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">3:00-4:30pm</td>
+     <td> <b>Parallel Sessions</b></td> 
+     </tr>
+
+     <tr>
+     <td valign="top">East Room</td>
+     <td valign="top"><b><u><a name="hombao">Applications of statistical
+     learning to brain imaging</a></u></b> (organized by Hernando Ombao and
+     chaired by Veronica Berrocal)<br><br> 
+     
+     <b>Rossi Luo</b> (Brown University)<br>
+     <b><em><a href="slides/rluo.pdf">Sparse inverse covariance
+     estimation with applications in recovering brain networks</a></em></b> 
+     <p> This talk presents a new method for estimating sparse precision
+     matrices in the high dimensional setting. This procedure applies a
+     Sparse Column-wise Inverse Operator (SCIO) to modified sample
+     covariance matrices. We establish the convergence rates of this
+     procedure under various matrix norms. In particular, we prove
+     theoretical guarantees for using cross validation to pick tuning
+     parameters in this procedure. Another advantage is its efficient
+     computation for large-scale problems. This method is applied to
+     recover gene networks of HIV brain tissues and resting-state fMRI
+     networks of ADHD children. </p> 
+     
+     <b>Tingting Zhang</b> (University of Virginia)<br>
+     <b><em><a href="slides/tzhang.pdf">A semi-parametric model for
+     hemodynamic response with latency differences</a></em></b> 
+     <p> We introduce a semi-parametric model of hemodynamic response
+     function (HRF) within the context of the General Linear Model (GLM)
+     for multi-subject fMRI data analysis. In this new model, the HRFs for
+     the given stimulus and fixed brain region are assumed to share the
+     same but unknown functional form across subjects, while they differ in
+     height, time to peak, and width. We use a nonparametric
+     spline-smoothing method to evaluate this common functional form, based
+     on which we estimate the subject-specific characteristics of the
+     HRFs. This approach brings several advantages, including: (1) it is
+     flexible in describing various brain hemodynamic activities across
+     different regions and stimuli; (2) it explicitly characterizes the
+     shared common properties across subjects, (3) the temporal
+     differentiability of the employed spline basis enables precise
+     evaluation of latency and width differences in hemodynamic
+     responses. Through both simulations and real data analysis, we show
+     that our method can out-perform existing methods for HRF
+     estimation. </p> 
+     
+     <b>Timothy Johnson</b> (University of Michigan)<br>
+     <b><em><a href="slides/tjohnson.pdf">Classifying multiple sclerosis
+     subtypes: a Bayesian spatial point process approach</a></em></b> 
+     <p> Multiple Sclerosis (MS) is a disease in which the myelin sheaths
+     surrounding the axons of the brain and spinal cord are damaged. This
+     leads to dymelination and scarring of the white matter tracks in the
+     brain. There are five main subtypes of MS: 1) clinically isolated
+     syndrom 2) relapsing/remitting, 3) secondary progressive, 4)
+     progressive relapsing and 5) primary progressive. Researchers are
+     interested in subtype prediction via MRI imaging. We use  a model
+     based approach to prediction, which can lead to substantial increases
+     in prediction accuracy versus non-model based approaches.  The data
+     are lesion locations from T1-weighted MRI images. Prediction is
+     performed within the Bayesian framework and we adopt a spatial Cox
+     process model. In particular, we estimate the intensity function on
+     the 3D image both parametrically, with a log-Gaussian random field,
+     and non-parametrically, with an hierarchical Poisson/gamma random
+     field.  The resulting estimates are used to predict MS subtype in a
+     new patient. We show, via importance sampling, that we achieve
+     excellent cross-validated prediction results compared to a naive
+     Bayesian classifier. </p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">West Room</td>
+     <td valign="top"><b><u><a name="aqu">Tuning parameter selection,
+     matrix factorization and decomposition</a></u></b> (organized and
+     chaired by Annie Qu)<br><br> 
+     
+     <b>Junhui Wang</b> (University of Illinois at Chicago) <br>
+     <b><em><a href="slides/jwang.pdf">Consistent selection of tuning
+     parameters in high-dimensional penalized regression</a></em></b> 
+     <p> Penalized regression models are popularly used in high-dimensional
+     data analysis to conduct variable selection and model fitting
+     simultaneously. Although success has been widely reported in
+     literature, their performances largely depend on the tuning parameters
+     that balance the trade-of between model fitting and model
+     sparsity. Existing tuning criteria mainly follow the route of
+     minimizing the estimated prediction error or maximizing the posterior
+     model probability, such as cross-validation, AIC and BIC. In this
+     talk, I will present a general tuning parameter selection criterion
+     based on a novel concept of variable selection stability. The key idea
+     is to select the tuning parameters so that the resultant penalized
+     regression model is stable in variable selection. Numerical examples
+     will be provided to demonstrate the effectiveness of the proposed
+     selection criterion. Asymptotic selection consistency of the proposed
+     criterion will also be discussed. </p> 
+     
+     <b>Mu Zhu</b> (University of Waterloo) <br>
+     <b><em><a href="slides/mzhu.pdf">Content-boosted matrix
+     factorization for recommender systems</a></em></b> 
+     <p> Recommender systems are quickly becoming ubiquitous marketing
+     tools. Recommendation algorithms can be either based on content or
+     driven by collaborative filtering. The Netflix prize has rejuvenated a
+     widespread interest in the matrix factorization approach of
+     collaborative filtering. We have been studying ways to incorporate
+     content information directly into this approach. In this talk, I will
+     present two methods with slightly different flavors. One uses a
+     regression constraint, and the other uses an extra penalty that has a
+     selective shrinkage effect. Our empirical evidence shows that these
+     content-boosted matrix factorization algorithms not only improve
+     recommendation accuracy, but also provide useful insights about the
+     contents themselves that are otherwise unavailable, as well as make
+     recommendations more easily interpretable. (Based on joint work with 
+     Peter Forbes and Jennifer Nguyen.) </p>
+     
+     <b>Xiaotong Shen</b> (University of Minnesota)<br>
+     <b><em>Simultaneous pursuit of sparseness
+     and rank structures through matrix decomposition</em></b> 
+     <p> In multi-response regression, pursuit of two different types of
+     structures is essential to battle the "curse of dimensionality". 
+     In this paper, we decompose a parameter matrix into a sum of sparse
+     and low rank matrices for structure pursuit. On this basis, we propose
+     a constrained method subject to two nonconvex constraints,
+     respectively for sparseness and low-rank properties. Computationally,
+     obtaining an exact global solution is NP-difficult. To overcome the
+     difficulty, we utilize an alternating directions method solving a
+     low-rank problem and a sparseness problem alternatively, where we
+     derive an exact solution to the low-rank problem, as well as an
+     approximation solution for the sparse problem through a surrogate of
+     the L0 constraint and difference convex programming. Theoretical
+     properties of the proposed method will be discussed in addition to
+     numerical examples.</p> 
+     </td>
+     </tr>         
+
+     </table> 
+
+   <h3>June 7 (Thursday)</h3>
+
+     <table cellspacing="5" style="font-size:14">
+
+     <tr>
+     <td valign="top">8:30-10:00am </td>
+     <td> <b>Parallel Sessions</b></td> 
+     </tr>
+
+     <tr>
+     <td valign="top">East Room</td>
+     <td valign="top"><b><u><a name="yliu">Flexible regression and
+     clustering</a></u></b> (organized by Yufeng Liu and chaired by
+     Lingsong Zhang)<br><br> 
+     
+     <b>Jia Li</b> (Pennsylvania State University and NSF) <br>
+     <b><em><a href="slides/jli.pdf">D2-clustering and hypothetical local
+     mapping</a></em></b> 
+     <p> In this talk, I will present a novel clustering algorithm
+     called D2-Clustering for objects each represented by a discrete
+     distribution with finite but non-fixed support.  This mathematical
+     representation often arises in multimedia content analysis and can be
+     viewed as a sparse representation of histogram-type (aka,
+     frequency-type) feature vectors.  The Kantorovich-Wasserstein metric
+     is used as the distance between objects, which differs profoundly from
+     the Euclidean distance based on frequencies.  The D2-Clustering algorithm
+     groups objects by minimizing the total within-cluster squared
+     distances, a criterion in the same spirit as k-means but applied to a
+     significantly more complicated data type.  The computational obstacle
+     is overcome by a double loop iterative linear programming algorithm.
+     Inspired by manifold learning, I also propose Hypothetical Local
+     Mapping (HLM) to construct a mixture density function for the generic
+     metric space.  The combination of D2-Clustering and HLM is applied to
+     real-time image annotation. </p>
+
+     <b>Guang Cheng</b> (Purdue University) <br>
+     <b><em><a href="slides/pqian.html">Joint asymptotics and inferences for semi-nonparametric 
+models</a></em></b> 
+     <p> In this talk, we consider the joint asymptotics and inferences for the semi-nonparametric models 
+where the Euclidean parameter and an infinite dimensional parameter are both of interest. To illustrate 
+our idea, we consider the generalized partly linear framework. Specifically, we derive the joint limit 
+distribution for the two parameters which are rescaled according to different convergence rates. The 
+marginal limit distribution/semiparametric efficiency for the Euclidean estimate coincides with that 
+derived in the semiparametric literature. To construct the joint confidence region/band, we propose the 
+likelihood ratio testing approach that can effectively avoid estimating the asymptotic covariance. The 
+employed regularization tool is the smoothing spline. The undersmoothing of the smoothing spline estimate 
+is required for obtaining the valid joint inferences. The key technical tool is a concentration 
+inequality. A by-product result is the marginal asymptotics for the infinite dimensional parameter that 
+are new even in the nonparametric literature. </p> 
+     
+     <b>Annie Qu</b> (University of Illinois at Urbana-Champaign)<br>
+     <b><em><a href="slides/aqu.pdf">Variable selection in
+     high-dimensional varying-coefficient models with global
+     optimality</a></em></b> 
+     <p> The varying coefficient model is flexible and powerful for
+     modeling the dynamic changes of regression coefficients.  It is
+     important to identify significant covariates associated with response
+     variables, especially for high-dimensional settings where the number
+     of covariates can be larger than the sample size.  We consider model
+     selection in the high-dimensional setting and adopt difference convex
+     programming to approximate the L0 penalty, and we investigate the
+     global optimality properties of the varying coefficient estimator. The
+     challenge of the variable selection problem here is that the dimension
+     of the nonparametric form for the varying coefficient modeling could
+     be infinite, in addition to dealing with the high-dimensional linear
+     covariates. We show that the proposed varying coefficient estimator is
+     consistent, enjoys the oracle property and achieves an optimal
+     convergence rate for the non-zero nonparametric components for
+     high-dimensional data.  Our simulations and numerical examples
+     indicate that the difference convex algorithm is efficient using the
+     coordinate decent algorithm, and is able to select the true model at a
+     higher frequency than the  LASSO, the adaptive LASSO and the SCAD
+     approaches. </p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">West Room</td>
+     <td valign="top"><b><u><a name="grocha">Inference in networks and
+     multivariate analysis</a></u></b> (organized and chaired by Guilherme
+     Rocha)<br><br> 
+     
+     <b> Karl Rohe </b> (University of Wisconsin, Madison)<br>
+     <b><em><a href="slides/krohe.pdf">Characterizing the asymmetric flow
+     of information in directed networks</a></em></b> 
+     <p> Relationships in social networks are often asymmetric and can
+     represent the flow of information from one person to another. Email
+     messages are one example. Using the directed stochastic blockmodel,
+     this talk will (i) present a way to characterize the asymmetric flow
+     of information in a directed network and (ii) demonstrate how this can
+     identify "bottleneck nodes" in a citation network. </p> 
+
+     <b> Michael Trosset </b> (Indiana University)<br>
+     <b><em><a href = "slides/mtrosset.html">Inference on random graphs
+     with classified edge attributes</a></em></b> 
+     <p> We test simple hypotheses about a random graph with a fixed set of
+     vertices and random edges, each of which possesses one of K mutually
+     exclusive attributes.  The edge attributes are inferred by means of a
+     fallible classifier.  Suppose that E and F are the confusion matrices
+     of two such classifiers.  Using results from statistical decision
+     theory, we demonstrate that, if there exists a K x K stochastic matrix
+     R such that ER = F, then most powerful (MP) tests based on E are
+     necessarily more powerful than MP tests based on F.  By means of an
+     example, we also demonstrate that entry-wise superiority of E to F
+     does not guarantee that an MP test based on E is more powerful than an
+     MP test based on F. </p> 
+
+     <b> Vincent Vu </b> (Carnegi Mellon University)<br>
+     <b><em>Sparse principal
+     subspaces</em></b> 
+     <p> Sparse Principal Subspaces (SPS) is an unsupervised statistical
+     technique that simultaneously performs variable selection and
+     dimension reduction for multivariate data. It builds on the main idea
+     of PCA by imposing the following constraint: the principal subspace of
+     variation is spanned mostly by a smaller number of variables. SPS
+     avoids problems such as non-orthogonality and ill-posedness that can
+     plague adhoc extensions of 1-dimensional sparse PCA methods to
+     d-dimensions. It does this by estimating an orthonormal basis for the
+     principal subspace all at once, and directly constraining the sparsity
+     of the estimated subspace rather than entries of individual
+     eigenvectors. In this talk I will present theoretical results
+     including non-asymptotic minimax lower and upper bounds for the
+     estimation of the principal subspace, and show that SPS is nearly rate
+     optimal. In addition, I will discuss algorithmic issues, examples in
+     data visualization, and concrete applications in the analysis of
+     neuroimaging data.</p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">Amphitheatre</td>
+     <td valign="top"><b><u> <a name="hzhang">Development in variable
+     screening and selection</a></u></b> (organized and chaired by Helen
+     Zhang)<br><br> 
+     
+     <b>Qing Mai and Hui Zou</b> (University of Minnesota)<br>
+     <b><em><a href="slides/qmai.pdf">The Kolmogorov filter for variable
+     screening in high-dimensional binary classification</a></em></b> 
+     <p> Variable screening techniques have been proposed to mitigate the
+     impact of high dimensionality in classification problems, including
+     the t-test marginal screening (Fan & Fan, 2008) and the maximum
+     marginal likelihood screening (Fan & Song, 2010). However, these
+     methods rely on strong modeling assumptions that are easily violated
+     in real applications. To circumvent the rigid assumptions, we propose
+     a new variable screening technique for binary classification based on
+     the Kolmogorov-Smirnov statistic, and hence the name Kolmogorov
+     filter. We prove that the Kolmogorov filter enjoys the sure screening
+     property under much weakened model assumptions. We supplement our
+     theoretical study by a simulation study. This is joint work with
+     Prof. Hui Zou. </p> 
+     
+     <b>Sijian Wang</b> (University of Wisconsin, Madison)<br>
+     <b><em><a href="slides/swang.pdf">Group and within group variable
+     selection via convex penalty</a></em></b> 
+     <p> In many scientific and engineering applications, predictors are
+     naturally grouped, for example, in biological applications where
+     assayed genes or proteins can be grouped by biological roles or
+     biological pathways. When the group structures are available among
+     predictors, people are usually interested in identifying both
+     important groups and important variables within the selected
+     groups. Among existing successful group variable selection methods,
+     some methods fail to conduct the within group selection. Some methods
+     are able to conduct both group and within group selection, but the
+     corresponding objective function is non-convex, which may require
+     extra numerical effort. In this talk, we will present a convex penalty
+     for both group and within group variable selection.  We develop an
+     efficient group-level coordinate descent algorithm for solving the
+     corresponding optimization problem.  We also study the non-asymptotic
+     properties of the estimates in the high-dimensional setting, where the
+     number of predictors can be much larger than the sample
+     size. Numerical results indicate that the proposed method works well
+     in terms of both variable selection and prediction accuracy. We also
+     apply the proposed method to American Cancer Society Breast Cancer
+     Survivor dataset.  This is joint work with Zhigeng Geng and Grace
+     Wahba. </p> 
+     
+     <b>Yichao Wu</b> (North Carolina State University)<br>
+     <b><em><a href="slides/ywu.pdf">Two-dimensional solution surface for
+     weighted support vector machines</a></em></b> 
+     <p> The support vector machine (SVM) is a popular method for binary
+     classification and its natural extension is the weighted SVM (WSVM) in
+     which observations from different classes are imposed with different
+     weights. Consequently there are two parameters associated with the
+     WSVM: one is the regularization parameter and the other is the weight
+     parameter. Although the marginal behavior of the WSVM solution have
+     already been explored, it is largely unknown how the WSVM solution
+     changes with respect to these two parameters jointly. We establish in
+     this article the joint piecewise-linearity of the WSVM solution in
+     terms of the regularization parameter and the weight parameter. By
+     taking advantage of the joint piecewise-linearity, an efficient
+     algorithm is then proposed to obtain the entire two-dimensional
+     solution surface. Our contribution is two-fold. First we provide a
+     theoretical understanding on how the WSVM solution changes when the
+     two parameters vary. Second this can address assorted potential issues
+     in practical applications as the WSVM solution is readily available
+     for any pair of regularization parameter and weight parameter. We
+     demonstrate its usefulness by applying the proposed two-dimensional
+     solution surface algorithm to tune the regularization parameter for
+     the probability estimation method originally developed by Wang et
+     al. (2008). A joint work with Seung Jun Shin and Hao Helen Zhang.</p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td>10:30-11:30am </td>
+     <td> <b>Plenary Talk </b> (chaired by Xiaotong Shen) </td>
+     </tr>
+     <tr>
+     <td valign="top">Amphitheatre</td>
+     <td valign="top"><b><a name="aowen">Art Owen</a></b> (Stanford University)<br>  
+     <b><em><a href="slides/aowen.pdf">Bootstrapping r-fold tensor data</a></em></b>
+     <p> This work is joint with Dean Eckles, Facebook. The famous Netflix
+     data is a sparsely sampled table with rows for customers and columns
+     for movies (or vice versa). Both movies and rows are naturally modeled 
+     as random effects.  Bootstrapping such data is problematic: no proper
+     bootstrap can exist, according to a theorem of Peter McCullagh.
+     Resampling rows and columns independently is effective though slightly
+     conservative. Computerized data gathering frequently produces data
+     sets with three-way or even higher order data tables. We present a
+     bootstrap for such tensor valued data. Our version uses independent
+     weights instead of multinomial ones. It remains mildly
+     conservative. Poisson weights are close to the original bootstrap, but
+     binary weights have computational and statistical advantages. Under
+     certain conditions a single bootstrap replicate suffices to give a
+     variance estimate. We apply our method to show that Facebook users in
+     the UK make longer comments than those in the US when using their
+     phone.  The opposite pattern holds for comments made via computer. </p>
+     </td>
+     </tr>
+
+     <tr>
+     <td valign="top">1:00-2:30pm</td>
+     <td> <b>Parallel Sessions</b></td> 
+     </tr>
+     
+     <tr>
+     <td valign="top">East Room</td>
+     <td valign="top"><b><u><a name="dwitten">Graphical modeling for
+     high-dimensional problems</a></u></b> (organized by Daniela Witten and
+     chaired by David Mease)<br><br> 
+     
+     <b>Hyonho Chun</b> (Purdue University)<br>
+     <b><em>A sparse conditional graphical
+     model for non-independent measurements</em></b> 
+     <p> For the purpose of inferring a network, we consider a sparse
+     Gaussian graphical model (SGGM) under the presence of a population
+     structure, which often occurs in genetic studies with model organisms.
+     In these studies, data are obtained by combining multiple lines of
+     inbred organisms or by using outbred animals.  Ignoring such
+     population structures would produce false connections in a graph
+     structure, but most research in graph inference has been focused on
+     independent cases.  On the other hand, in regression settings, a
+     linear mixed effect model has been widely used in order to account for
+     correlations among observations.  Besides its effectiveness, the
+     linear mixed effect model has a generality; the model can be stated
+     within a framework of penalized least squares.  This generality makes
+     it very flexible for utilization in settings other than regression.
+     In this proposal, we adopt a random effect model to an SGGM.  Our
+     formulation fits into the recently developed conditional Gaussian
+     graphical model in which the population structures are modeled as
+     predictors and the graph is determined by a conditional precision
+     matrix.  The proposed approach is applied to the network inference
+     problem of two datasets: heterogeneous stock (HS) and heterogeneous
+     mice diversity panel (HMDP) datasets. </p> 
+     
+     <b>Pradeep Ravikumar</b>  (University of Texas at Austin)<br>
+     <b><em><a href="slides/pravikumar.pdf">One the use of greedy methods
+     for learning discrete and Gaussian graphical models</a></em></b> 
+     <p> Undirected graphical models, also known as Markov random fields,
+     are widely used in a variety of domains, including biostatistics,
+     natural language processing and image analysis among others. They
+     compactly represent distributions over a large number of variables
+     using undirected graphs which encodes conditional independence
+     assumptions among the variables. Recovering this underlying graph
+     structure is thus important for many of these applications of MRFs,
+     especially under constrained settings where the number of variables is
+     large, and the samples are limited. In this talk, we address the
+     problem of learning the structure of a pairwise graphical model from
+     samples in a high-dimensional setting. Classical approaches to this
+     problem have ranged over various heuristic approaches, greedy methods
+     being one class of them, but a line of recent research have proposed
+     principled convex regularization based M-estimators, that have been
+     shown to be not only computationally practical, but to also enjoy
+     strong statistical guarantees. In this talk, we revisit a classical
+     and simple greedy algorithm, that just iteratively adds and deletes
+     edges. Surprisingly, we show that when these forward and backward
+     steps are performed appropriately, we obtain a state of the art method
+     for recovering graphical model structure. Indeed, not only does it
+     enjoy obvious computational advantages over regularized convex
+     optimization based approaches, but we also show that it is
+     sparsistent, or consistent in sparsity pattern recovery, under weaker
+     conditions, and with a smaller sample complexity. Joint work with Ali
+     Jalali, Christopher Johnson. </p> 
+     
+     <b>Daniela Witten</b> (University of Washington)<br>
+     <b><em><a href="slides/dwitten.pdf">Fast graphical model estimation
+     in very high dimensions</a></em></b> 
+     <p> The graphical lasso, recently proposed for Gaussian graphical
+     modeling in high dimensions, involves estimating an inverse covariance
+     matrix under a multivariate normal model by maximizing the
+     L1-penalized log likelihood. I will begin by presenting a very simple
+     but previously unknown necessary and sufficient condition that can be
+     used to identify the connected components in the graphical lasso solution.
+     This condition can be used to achieve massive computational gains:
+     computing the graphical lasso solution with 20,000 features now takes
+     minutes on a standard desktop machine, whereas previously the
+     computations were prohibitive. This opens up new doors for rigorous
+     network analysis of high-dimensional biological data. As a specific
+     example, I will discuss estimation of graphical models under distinct
+     biological conditions, in which we expect some, but not all, aspects
+     of the networks to differ between conditions. An extension of the
+     necessary and sufficient condition developed for the graphical lasso
+     allows for extremely fast network estimation in this setting. Parts of
+     this work are joint with Jerry Friedman, Noah Simon, Pei Wang, and
+     Patrick Danaher. </p>
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">West Room</td>
+     <td valign="top"><b><u><a name="myuan">Variable/feature selection via
+     regularization</a></u></b> (organized by Ming Yuan and chaired by
+     Peter Qian)<br><br> 
+     
+     <b>Yang Feng</b> (Columbia University) <br>
+     <b><em><a href="slides/yfeng.pdf">A nonparametric optimal decision
+     rule in high dimensional space</a></em></b> 
+     <p> Nonparametric Optimal Decision Rule (NOD) is proposed to tackle
+     the high-dimensional binary classification problem. We assume that the
+     log-likelihood of class conditional densities can be written as a
+     linear combination of log-likelihoods of marginal class conditional
+     densities.  After we plug-in estimates of marginal class conditional
+     densities, to solve the classification problem is equivalent to find
+     the best linear classification rule in a nonparametrically transformed
+     feature space.   Oracle inequalities are developed regarding the
+     classification error.  A vast array of simulation and real data
+     analysis demonstrate the outstanding performance of NOD. </p> 
+     
+     <b>Yiyuan She</b> (Florida State University) <br>
+     <b><em>Joint variable and rank selection
+     for parsimonious estimation of high dimensional matrices</em></b> 
+     <p> The talk discusses joint variable and rank selection for
+     supervised dimension reduction in predictive learning. When the number
+     of responses and/or that of the predictors exceed the sample size, one
+     has to consider shrinkage methods for estimation and prediction. We
+     propose to apply sparsity and reduced rank techniques jointly to
+     attain simultaneous feature selection and feature extraction. A class
+     of estimators are introduced are based on novel penalties that impose
+     both row and rank restrictions on the coefficient matrix. We show that
+     these estimators adapt to the unknown matrix sparsity. A computation
+     algorithm is developed and applied to real world applications in
+     machine learning, cognitive neuroscience and macroeconometrics
+     forecasting. This is joint work with Florentina Bunea and Marten
+     Wegkamp.</p> 
+     
+     <b>Yixin Fang</b> (New York University) <br>
+     <b><em><a href="slides/yfang.pdf">Penalized principal components of
+     heritability</a></em></b> 
+     <p> In family studies with multiple continuous phenotypes, we are
+     interested in finding linear combinations of the phenotypes with large
+     heritabilities, which can be considered as new phenotypes for genetic
+     analysis. Here we examine the principal-components approach based on
+     heritability (PCH) for situations where the number of phenotypes is
+     large, and propose the penalized PCH approach for such situations. We
+     evaluate the performance of the new approach using simulation and two
+     family studies. </p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">3:00-4:30pm </td>
+     <td> <b>Parallel Sessions</b></td> 
+     </tr>
+
+     <tr>
+     <td valign="top">East Room</td>
+     <td valign="top"><b><u><a name="yshe">Structural sparsity pursuit in
+     high-dimensional modeling</a> </u></b> (organized and chaired by
+     Yiyuan She)<br><br> 
+     
+     <b>Jiahua Chen</b> (University of British Columbia)<br>
+     <b><em><a href="slides/jchen.pdf">A thresholding algorithm for order
+     selection in finite mixture models</a></em></b> 
+     <p> Order selection is an important step in the application of finite
+     mixture models. Classical methods such as AIC and BIC discourage
+     complex models with a penalty directly proportional to the number of
+     mixing components. In contrast, Chen and Khalili(2008) propose to link
+     the penalty to two types of over-fitting. In particular, they
+     introduce a regularization penalty to merge similar subpopulations in
+     a mixture model, where the shrinkage idea of regularized regression is
+     seamlessly employed. However, the new method requires an effective and
+     efficient algorithm. When the popular EM-algorithm is used, we need to
+     maximize a non-smooth and non-concave objective function in the
+     M-step, which is computationally challenging. In this article, we show
+     that such an objective function can be transformed into a sum of
+     univariate auxiliary functions. We then design an iterative
+     thresholding descent algorithm (ITD) to efficiently solve the
+     associated optimization problem. Unlike many existing numerical
+     approaches, the new algorithm leads to sparse solutions and thereby
+     avoids undesirable ad hoc steps. We establish the convergence of the
+     ITD and further assess its empirical performance using both
+     simulations and real-data examples. </p> 
+     
+     <b>Jiashun Jin</b> (Carnegi Mellon University)<br>
+     <b><em><a href="slides/jjin.pdf">Optimality of graphlet screening in
+     high dimensional variable selection</a></em></b> 
+     <p> Consider a linear model $Y=X\beta+z$, where X has n rows and p
+     columns and z ~ N(0; In). We assume both p and n are large, including
+     the case of p >> n. The unknown signal vector $\beta$ is assumed to be
+     sparse in the sense that only a small fraction of its components is
+     nonzero. The goal is to identify such nonzero coordinates (i.e.,
+     variable selection). We are primarily interested in the regime where
+     signals are both rare and weak so that successful variable selection
+     is challenging but is still possible. Researches on rare and weak
+     signals to date have been focused on the unstructured case, where the
+     Gram matrix $G=X^TX$ is nearly orthogonal. In this paper, G is only
+     assumed to be sparse in the sense that each row of G has relatively
+     few large coordinates (diagonals of G are normalized to 1). The
+     sparsity of G naturally induces the sparsity of the so-called graph of
+     strong dependence (GOSD). The key insight is that there is an
+     interesting interplay between the signal sparsity and graph sparsity:
+     in a broad context, the signals decompose into many small-size
+     components of GOSD that are disconnected to each other. We propose
+     Graphlet Screening (GS) for variable selection. This is a two-step
+     Screen and Clean procedure, where in the first step, we screen
+     subgraphs of GOSD with sequential $\chi^2$-tests, and in the second
+     step, we clean with penalized MLE. The main methodological innovation
+     is to use GOSD to guide both the screening and cleaning processes. For
+     any variable selection procedure $\hat{\beta}$ we measure its
+     performance with the Hamming distance between the sign vectors of
+     $\hat{\beta}$ and $\beta$, and assess the optimality by the
+     convergence rate of the Hamming distance. Compared with more stringent
+     criterions such as exact support recovery or oracle property, which
+     demand strong signals, the Hamming distance criterion is more
+     appropriate for weak signals since it naturally allows a small
+     fraction of errors. We show that in a broad class of situations,
+     Graphlet Screening achieves the optimal rate of convergence in terms
+     of the Hamming distance. Well-known procedures such as the
+     L0-penalization method and the L1-penalization methods do not utilize
+     graph structure for variable selection, so they generally do not
+     achieve the optimal rate of convergence, even in very simple settings
+     and even when the tuning parameters are ideally set. </p> 
+     
+     <b>Elizaveta Levina</b> (University of Michigan)<br>
+     <b><em><a href="slides/elevina.html">Link prediction for partially
+     observed networks</a></em></b> 
+     <p> Link prediction is one of the fundamental problems in network
+     analysis. In many applications, notably in genetics, a partially
+     observed network may not contain any negative examples of absent
+     edges, which creates a difficulty for many existing supervised
+     learning approaches.  We present a new method which treats the
+     observed network as a sample of the true network with different
+     sampling rates for positive and negative examples, where the sampling
+     rate for negative examples is allowed to be 0.  The sampling rate
+     itself cannot be estimated in this setting, but a relative ranking of
+     potential links by their probabilities can be, which is sufficient in
+     many applications. To obtain these rankings, we utilize information on
+     node covariates as well as on network topology, and set up the problem
+     as a loss function measuring the fit plus a penalty measuring
+     similarity between nodes.   Empirically, the method performs well
+     under many settings, including when the observed network is sparse and
+     when the sampling rate is low even for positive examples. We
+     illustrate the performance of our method and compare to others on an
+     application to a protein-protein interaction network.  Joint work with
+     Yunpeng Zhao and Ji Zhu. </p> 
+     </td>
+     </tr>         
+
+     <tr>
+     <td valign="top">West Room</td>
+     <td valign="top"><b><u><a name="mzhu">Statistical methods for next
+     generation sequencing data analysis in bioinformatics</a></u></b>
+     (organized anc chaired by Michael Zhu)<br><br> 
+     
+     <b>Ming Hu</b> (Harvard University) <br>
+     <b><em><a href="slides/mhu.pdf">Bayesian inference of three-dimensional chromosomal 
+organization</a></em></b>
+     <p> Knowledge of spatial organization of the genome is critical for
+     the study of transcription regulation and other nuclear processes in
+     the cell. Recently, chromosome conformation capture (3C) based
+     technologies such as Hi-C and TCC have been developed to provide a
+     genome-wide, three-dimensional (3D) view of chromatin organization,
+     but analysis algorithms for inferring chromosomal structures from such
+     experiments are still under-developed. In the Hi-C experiment, the
+     spatial proximity of any two genomic loci is represented by a count
+     matrix. The goal of our study is to translate the count matrix into
+     three-dimensional (3D) structure of local genomic domains. To achieve
+     this, we devise a novel Bayesian statistical model linking the
+     observed read counts spanning a pair of loci to the spatial distance
+     between them. Using advanced Monte Carlo computational techniques such
+     as sequential Monte Carlo and hybrid Monte Carlo, we are able to
+     reconstruct the spatial arrangement of local genomic domains in 3D
+     space. When applying our method to a real Hi-C dataset, we can
+     visualize the 3D shape of the local genomic domains, and the predicted
+     spatial distances are consistent with the gold standard florescent in
+     situ hybridization (FISH) data. With the explosive accumulation of
+     high throughput genome-wide chromatin interaction data, the proposed
+     method will have immediate and far-reaching impact in the broader area
+     of biomedical research. </p> 
+     
+     <b>Steve Qin</b> (Emory University)<br>
+     <b><em><a href="slides/sqin.html">Inference of correlated hidden
+     Markov models with application to genome-wide studies</a></em></b> 
+     <p> Hidden Markov models (HMM) have been widely used to analyze
+     large-scale genomic data because of its ability to incorporate spatial
+     correlation, in areas such as genome-wide mapping of binding sites for
+     regulatory proteins. With advances in sequencing technology, it is now
+     common to analyze data for multiple proteins jointly, but existing
+     algorithms analyze data for each protein separately. However,
+     extending the HMM framework to a multivariate form is not trivial
+     because hidden state space increases quickly with the number of
+     experiments and it is therefore of interest to develop a powerful yet
+     computationally tractable algorithm. Here we present a fast
+     inferential method for correlated hidden Markov models for multiple
+     sequential data (series). Instead of jointly inferring hidden states
+     for all series, we adjust the transition kernel of each series with
+     the hidden state configuration in other correlated series and keep the
+     hidden state inference marginal in each. Through simulation, we show
+     that the new scheme achieves sensitivity comparable to the fully
+     coupled HMM fit at a computational cost as low as fitting an
+     independent HMM for each series separately. The method was applied to
+     the analysis of histone modification data in human T cells.</p> 
+     
+     <b>Han Wu</b> (Purdue University)<br>
+     <b><em><a href="slides/hwu.pdf">Using finite Poisson mixture models
+     for RNA-Seq data analysis and transcript expression level
+     quantification</a></em></b> 
+     <p> RNA-Seq has emerged as a powerful technique for transcriptome
+     study. As much as the improved sensitivity and coverage, RNA-Seq also
+     brings challenges for data analysis. The massive amount of sequence
+     reads data, excessive variability, uncertainties, and bias and noises
+     stemming from multiple sources all make the analysis of RAN-Seq data
+     difficult. Despite much progress, RNA-Seq data analysis still has much
+     room for improvement, especially on the quantification of
+     transcript/gene expression levels. In this article, we propose to use
+     finite Poisson mixture models to characterize base pair-level RNA-Seq
+     data and further quantify transcript/gene expression levels. Finite
+     Poisson mixture models combine the strength of fully parametric models
+     with the flexibility of fully nonparametric models, and are extremely
+     suitable for modeling heterogeneous count data such as what we
+     observed from RNA-Seq experiments. In particular, we consider three
+     types of Poisson mixture models and propose to use a BIC-based model
+     selection procedure to adapt the models to individual transcripts. A
+     unified quantification method based on the Poisson mixture models is
+     developed to measure transcript/gene expression levels. The Poisson
+     mixture models and the proposed quantification method were applied to
+     analyze two RNA-Seq data sets and demonstrated excellent performances
+     in comparison with other existing methods. Our approach resulted in
+     better characterization of the data and more accurate measurements of
+     transcript expression levels. We believe that finite Poisson mixture
+     models provide a flexible framework to model RNA-Seq data, and methods
+     developed based on this framework have the potential to become
+     powerful tools for  RNA-Seq data analysis.</p> 
+     </td>
+     </tr>         
+
+     </table> 
+
+  </tr>
+  </table>  
+ </td>
+</tr>
+</table>
+<!--
+<p>
+<font size = 2 color="gray"> 
+&copy; 2012, 
+Department of Statistics, University of Michigan, 439 West Hall, Ann Arbor,
+MI 48109-1107 | Tel: (734) 763-3519 | Fax: (734) 763-4676</font> 
+</p>
+-->
+</center>
+</body>
+
+<!-- Mirrored from dept.stat.lsa.umich.edu/~jizhu/sldm2012/abs_and_slides.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Jun 2015 18:23:12 GMT -->
+</html>
